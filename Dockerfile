@@ -1,9 +1,9 @@
 FROM resin/rpi-raspbian:wheezy
-MAINTAINER Heiko Ziegler <git@z5r.de>
+MAINTAINER Heiko Ziegler, https://github.com/heziegl
 
 
 RUN     apt-get update && \
-        apt-get -y install perl adduser iproute curl wget faad flac lame sox
+        apt-get -y install perl adduser iproute iputils-ping curl wget faad flac lame sox
 
 
 ENV    SQUEEZE_VOL_PERSIST /var/lib/squeezeboxserver
