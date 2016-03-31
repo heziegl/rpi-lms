@@ -8,7 +8,7 @@ DOCKERHUBUSER=heziegl
 # docker image to build
 IMAGE_NAME=$DOCKERHUBUSER/rpi-lms:$VERSION
 
-# build grafana runtime
+# build runtime
 sudo docker build -t $IMAGE_NAME .
 
 # push to docker hub
